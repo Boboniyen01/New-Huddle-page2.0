@@ -1,0 +1,109 @@
+body{
+    background: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    padding:1rem 0rem 0rem 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3rem ;
+    margin: 32px auto;
+    /* padding: 0rem 5rem 0rem 5rem; */
+    color: white;
+
+}
+ main img{
+width: 100%;
+}
+ .second-section h1{
+    margin: 0px 200px 0px 0px;
+ }
+.second-section p{
+margin: 20px 150px 20px 0px;
+}
+button{
+    width: 10rem;
+    padding: 15px;
+    border-radius: 100px;
+    border: 0px;
+    background-color: white;
+    color: hsl(300, 69%, 71%);
+
+}
+button:active {
+color: white;
+background-color: hsl(300, 69%, 71%);
+transition: background-color 0.2s ease-out ;
+}
+
+footer{
+    width:150px;
+     margin-left: 80%;  
+     margin-right: 3rem;
+    display: flex;
+flex-direction:row;
+ justify-content: space-around;
+ text-align: right;
+}
+
+footer a>img{
+    width:20px;
+
+}
+.bccolor{
+    background-color: hsl(257, 40%, 49%);
+}
+
+
+
+
+@media (max-width:750px){
+
+    body{
+        padding:1rem;
+        margin: 0rem;
+        /* note add padding to the body when dealing with media query s that the web page will be well centered */
+    }
+    main{
+        width:300px;
+        display: block;
+        /* justify-content: center;
+        align-items: center; */
+        margin: 0rem auto;
+        text-align: center;
+        /* note when i changed the width to 300px it best fit the page */
+    }
+
+    .second-section  {
+        /* margin-left:2rem; */
+        margin: 0rem;
+        display: block;
+        text-align: center;
+    }
+.second-section h1,p  {
+    margin: 0rem;
+    display: block;
+    text-align: center;
+
+}
+
+.second-section p {
+    text-align: center;
+    margin-right: 0rem;
+    display: block;
+
+}
+
+header img{
+    width:200px;
+}
+
+
+footer{ width: 150px;
+    margin: 3rem auto;
+ margin-left: 80px;
+} 
+}
